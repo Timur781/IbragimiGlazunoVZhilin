@@ -1,0 +1,6 @@
+def is_automorphic(num, power=2):
+    """Проверяет, является ли число автоморфным"""
+    return str(num ** power).endswith(str(num))
+
+# Быстрая проверка для известных автоморфных чисел
+test_numbers = [1, 5, 6, 25, 76, 376, 625, 9376
