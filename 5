@@ -1,16 +1,3 @@
 def is_automorphic(num, power=2):
     """Проверяет, является ли число автоморфным"""
     return str(num ** power).endswith(str(num))
-# Быстрая проверка для известных автоморфных чисел
-test_numbers = [1, 5, 6, 25, 76, 376, 625, 9376]
-print("Проверка известных автоморфных чисел (квадраты):")
-for num in test_numbers:
-    if is_automorphic(num, 2):
-        print(f"✓ {num} -> {num**2}")
-    else:
-        print(f"✗ {num}")
-# Поиск автоморфных кубов
-print("\nАвтоморфные кубы (1-10000):")
-for num in range(1, 10001):
-    if is_automorphic(num, 3):
-        print(f"{num} -> {num**3}")
